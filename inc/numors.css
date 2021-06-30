@@ -1,11 +1,28 @@
-.footer-links {
+/* LINKS */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+div.footer-links-a {
+  padding: 10px 0 4px 0;
+  text-align: center;
+}
+div.footer-links-b {
   text-align: center;
 }
 
-.footer-link {
-  padding: 0 5px;
+a.footer-link {
+  color: #444444;
+  padding: 0 4px;
 }
 
-.copyright-info {
+div.copyright-info {
+  padding: 10px;
   text-align: center;
+  color: #444444;
 }
