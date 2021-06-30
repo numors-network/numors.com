@@ -1,11 +1,11 @@
-body {
-  background-color: aqua;
-}
-
 .footer-links {
   text-align: center;
 }
 
 .footer-link {
   padding: 0 5px;
+}
+
+.copyright-info {
+  text-align: center;
 }
