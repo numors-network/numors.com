@@ -28,17 +28,16 @@ div.copyright-info {
 }
 
 /* PAGE ANIMATION */
+header,
 main {
-  animation: transitionIn 0.75s;
+  animation: fade 1s;
 }
 
-@keyframes transitionIn {
+@keyframes fade {
   from {
     opacity: 0;
-    transform: rotateX(-10deg);
   }
   to {
     opacity: 1;
-    transform: rotateX(0);
   }
 }
