@@ -29,7 +29,8 @@ div.copyright-info {
 
 /* PAGE ANIMATION */
 header,
-main {
+main,
+footer {
   animation: fade 1s;
 }
 
