@@ -6,6 +6,23 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* TEXT */
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+p {
+  font-size: 20px;
+}
+
 /* LINKS */
 a:link,
 a:visited,
@@ -23,12 +40,10 @@ div.footer-links-a {
 div.footer-links-b {
   text-align: center;
 }
-
 a.footer-link {
   color: #444444;
   padding: 0 4px;
 }
-
 div.copyright-info {
   padding: 10px;
   text-align: center;
@@ -41,7 +56,6 @@ main,
 footer {
   animation: fade 1s;
 }
-
 @keyframes fade {
   from {
     opacity: 0;
