@@ -126,15 +126,12 @@
     text-align: center;
     color: #444444;
   }
-
-  /* ====== [ Nav Bar ] ====== */
   .nav {
     bottom: 0;
     width: 100vw;
     height: 5rem;
   }
   .nav-bar {
-    display: flex;
     flex-direction: row;
   }
   .nav-link {
@@ -213,19 +210,9 @@
 
   /* ====== [ Nav Bar ] ====== */
   .nav {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
-  }
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-link {
-    justify-content: center;
-  }
-  main {
-    margin: 0;
+    top: 0;
+    width: 5rem;
+    height: 100vh;
   }
 }
 
