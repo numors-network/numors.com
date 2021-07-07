@@ -53,6 +53,11 @@ div.copyright-info {
   color: #444444;
 }
 
+/* NAV BAR */
+.nav-icon {
+  width: 50px;
+}
+
 /* PAGE ANIMATION */
 header,
 main,
