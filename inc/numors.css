@@ -146,6 +146,7 @@
 
 /* ====== ====== [ DESKTOP STYLING ] ====== ====== */
 @media only screen and (min-width: 600px) {
+  /* ====== [ Root ] ====== */
   body {
     color: black;
     background-color: white;
@@ -159,6 +160,8 @@
     margin-left: 5rem;
     padding: 1rem;
   }
+
+  /* ====== [ Text ] ====== */
   h1 {
     font-size: 34px;
     font-weight: bold;
@@ -177,6 +180,8 @@
   li {
     font-size: 20px;
   }
+
+  /* ====== [ Link ] ====== */
   a:link,
   a:visited,
   a:hover,
@@ -184,6 +189,8 @@
     color: #1e90ff;
     text-decoration: none;
   }
+
+  /* ====== [ Footer ] ====== */
   div.footer-links-a {
     padding: 10px 0 4px 0;
     text-align: center;
@@ -200,6 +207,8 @@
     text-align: center;
     color: #444444;
   }
+
+  /* ====== [ Nav Bar ] ====== */
   .nav {
     top: 0;
     width: 5rem;
