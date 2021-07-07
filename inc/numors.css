@@ -1,74 +1,221 @@
-/* FONTS */
+/* ====== ====== [ GLOBAL STYLING ] ====== ====== */
+
+/* ====== [ Fonts ] ====== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-/* BODY */
-body {
+/* ====== [ Root ] ====== */
+:root {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: white;
 }
 
-/* TEXT */
-h1 {
-  font-size: 34px;
-  font-weight: bold;
-}
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
-h3 {
-  font-size: 26px;
-  font-weight: bold;
-}
-p {
-  font-size: 20px;
-}
-li {
-  font-size: 20px;
-}
-
-/* LINKS */
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: #1e90ff;
-  text-decoration: none;
-}
-
-/* FOOTER */
-div.footer-links-a {
-  padding: 10px 0 4px 0;
-  text-align: center;
-}
-div.footer-links-b {
-  text-align: center;
-}
-a.footer-link {
-  color: #444444;
-  padding: 0 4px;
-}
-div.copyright-info {
-  padding: 10px;
-  text-align: center;
-  color: #444444;
-}
-
-/* NAV BAR */
-.nav-icon {
-  width: 50px;
-}
-
-/* PAGE ANIMATION */
-header,
-main,
-footer {
-  animation: fade 1s;
-}
-@keyframes fade {
+/* ====== [ Animations ] ====== */
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
+}
+
+/* ====== [ Nav Bar ] ====== */
+.nav {
+  position: fixed;
+  background-color: aquamarine;
+}
+.nav-bar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.nav-item {
+  width: 100%;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  text-decoration: none;
+}
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+/* ====== ====== [ SMARTPHONE STYLING ] ====== ====== */
+@media only screen and (max-width: 600px) {
+  /* ====== [ Root ] ====== */
+  body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  header,
+  main,
+  footer {
+    animation: fadeIn 1s;
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+
+  /* ====== [ Text ] ====== */
+  h1 {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 20px;
+  }
+  li {
+    font-size: 20px;
+  }
+
+  /* ====== [ Link ] ====== */
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+
+  /* ====== [ Image ] ====== */
+  img {
+    border-radius: 6px;
+  }
+
+  /* ====== [ Header ] ====== */
+
+  /* ====== [ Main ] ====== */
+
+  /* ====== [ Footer ] ====== */
+  div.footer-links-a {
+    padding: 10px 0 4px 0;
+    text-align: center;
+  }
+  div.footer-links-b {
+    text-align: center;
+  }
+  a.footer-link {
+    color: #444444;
+    padding: 0 4px;
+  }
+  div.copyright-info {
+    padding: 10px;
+    text-align: center;
+    color: #444444;
+  }
+  .nav {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .nav-bar {
+    flex-direction: row;
+  }
+  .nav-link {
+    justify-content: center;
+  }
+  main {
+    margin: 0;
+  }
+}
+
+/* ====== ====== [ DESKTOP STYLING ] ====== ====== */
+@media only screen and (min-width: 600px) {
+  body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  header,
+  main,
+  footer {
+    animation: fadeIn 1s;
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 20px;
+  }
+  li {
+    font-size: 20px;
+  }
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  div.footer-links-a {
+    padding: 10px 0 4px 0;
+    text-align: center;
+  }
+  div.footer-links-b {
+    text-align: center;
+  }
+  a.footer-link {
+    color: #444444;
+    padding: 0 4px;
+  }
+  div.copyright-info {
+    padding: 10px;
+    text-align: center;
+    color: #444444;
+  }
+  .nav {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+}
+
+/* ====== ====== [ SCROLLBAR STYLING ] ====== ====== */
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border: 4px solid #ffffff;
+  border-radius: 25px;
 }
