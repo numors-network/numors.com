@@ -134,6 +134,9 @@
   .nav-bar {
     flex-direction: row;
   }
+  .nav-item {
+    height: 100%;
+  }
   .nav-link {
     justify-content: center;
   }
