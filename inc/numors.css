@@ -129,7 +129,7 @@
   .nav {
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 3rem;
   }
   .nav-bar {
     flex-direction: row;
@@ -211,7 +211,7 @@
   /* ====== [ Nav Bar ] ====== */
   .nav {
     top: 0;
-    width: 5rem;
+    width: 3rem;
     height: 100vh;
   }
 }
