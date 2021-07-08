@@ -1,1 +1,14 @@
-<svg aria-hidden="true" data-prefix="fas" data-icon="circle" class="svg-inline--fa fa-circle fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="250" y1="5.613" x2="250" y2="494.387" id="gradient-0">
+      <stop offset="0" style="stop-color: rgba(164, 174, 185, 1)"/>
+      <stop offset="1" style="stop-color: rgba(107, 123, 139, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="250" y1="5.613" x2="250" y2="494.387" id="gradient-1">
+      <stop offset="0" style="stop-color: rgba(122, 122, 130, 1)"/>
+      <stop offset="1" style="stop-color: rgba(73, 73, 77, 1)"/>
+    </linearGradient>
+  </defs>
+  <path d="M 227.708 227.699 C 215.393 240.018 215.393 259.984 227.708 272.292 C 240.018 284.608 259.993 284.608 272.301 272.292 C 284.618 259.972 284.618 240.007 272.301 227.699 C 259.983 215.392 240.018 215.392 227.708 227.699 Z M 250.004 5.613 C 115.026 5.613 5.613 115.026 5.613 250.001 C 5.613 384.975 115.026 494.387 250.004 494.387 C 384.974 494.387 494.387 384.975 494.387 250.001 C 494.387 115.026 384.974 5.613 250.004 5.613 Z M 374.302 151.505 L 309.295 293.754 C 306.151 300.634 300.633 306.149 293.754 309.295 L 151.519 374.303 C 135.11 381.801 118.2 364.891 125.698 348.485 L 190.717 206.236 C 193.864 199.357 199.379 193.842 206.257 190.696 L 348.494 125.689 C 364.903 118.199 381.802 135.1 374.302 151.505 Z" style="stroke-miterlimit: 10; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-width: 10px; fill: url(#gradient-0); paint-order: fill; stroke: url(#gradient-1);"/>
+</svg>
