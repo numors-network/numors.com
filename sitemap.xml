@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://www.numors.com/sitemap/au.xml</loc>
+    <loc>https://www.numors.com/sitemap/app.xml</loc>
+  </sitemap>
+    <sitemap>
+    <loc>https://www.numors.com/sitemap/article.xml</loc>
+  </sitemap>
+    <sitemap>
+    <loc>https://www.numors.com/sitemap/tutorial.xml</loc>
+  </sitemap>
+    <sitemap>
+    <loc>https://www.numors.com/sitemap/product.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://www.numors.com/sitemap/ca.xml</loc>
+    <loc>https://www.numors.com/sitemap/au-explore.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://www.numors.com/sitemap/in.xml</loc>
+    <loc>https://www.numors.com/sitemap/au-learning.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://www.numors.com/sitemap/uk.xml</loc>
+    <loc>https://www.numors.com/sitemap/au-marketplace.xml</loc>
   </sitemap>
-  <sitemap>
-    <loc>https://www.numors.com/sitemap/us.xml</loc>
-  </sitemap>
+  
 </sitemapindex>
