@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://www.numors.com/sitemap/in-en.xml</loc>
+    <loc>https://www.numors.com/sitemap/au.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://www.numors.com/sitemap/us-en.xml</loc>
+    <loc>https://www.numors.com/sitemap/ca.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.numors.com/sitemap/in.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.numors.com/sitemap/uk.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.numors.com/sitemap/us.xml</loc>
   </sitemap>
 </sitemapindex>
