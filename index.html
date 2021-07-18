@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="/inc/numors.css" />
   </head>
   <body>
+    <script>
+      if (localStorage.getItem("country") === "uk") {
+        window.location.href = "https://www.w3schools.com";
+      }
+    </script>
     <h1>Select Your Country</h1>
     <ul>
       <li><a href="/go/set-australia.html">Australia</a></li>
