@@ -1,19 +1,44 @@
-/* ====== ====== [ GLOBAL STYLING ] ====== ====== */
+/* ====== ====== [ FONT ] ====== ====== */
+@charset "UTF-8";
 
-/* ====== [ Fonts ] ====== */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
-/* ====== [ Root ] ====== */
+/* ====== ====== [ ROOT ] ====== ====== */
 :root {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  color: black;
-  background-color: white;
+  --numors-white: #ffffff;
+  --numors-black: #1c1c1c;
+  --numors-light-gray: #d3d3d3;
+  --numors-gray: #808080;
+  --numors-dark-gray: #696969;
+  --numors-light-metallic: #d3d3d3;
+  --numors-metallic: #808080;
+  --numors-dark-metallic: #696969;
+  --numors-red: #ff2d55;
+  --numors-dark-red: #dc3545;
+  --numors-green: #30d158;
+  --numors-dark-green: #32cd32;
+  --numors-blue: #1e90ff;
+  --numors-dark-blue: #1e90ff;
+  --numors-yellow: #ffd700;
+  --numors-dark-yellow: #ffc107;
+  --numors-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --numors-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --numors-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
 }
 
-/* ====== [ Animations ] ====== */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -23,7 +48,26 @@
   }
 }
 
-/* ====== [ Nav Bar ] ====== */
+/* ====== ====== [ BODY ] ====== ====== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--numors-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+header,
+main,
+footer {
+  animation: fadeIn 1s;
+}
+
+/* ====== ====== [ NAV BAR ] ====== ====== */
 .nav {
   position: fixed;
   background-color: aquamarine;
@@ -54,6 +98,363 @@
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
+}
+.nav {
+  bottom: 0;
+  width: 100vw;
+  height: 3rem;
+}
+.nav-bar {
+  flex-direction: row;
+}
+.nav-item {
+  height: 100%;
+}
+.nav-link {
+  justify-content: center;
+}
+.nav {
+  bottom: 0;
+  width: 100vw;
+  height: 3rem;
+}
+.nav-bar {
+  flex-direction: row;
+}
+.nav-item {
+  height: 100%;
+}
+.nav-link {
+  justify-content: center;
+}
+main {
+  margin: 0;
+}
+
+/* ====== ====== [ SCROLL BAR ] ====== ====== */
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--numors-light-gray);
+  border: 4px solid #ffffff;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--numors-gray);
+  border: 4px solid #ffffff;
+  border-radius: 25px;
+}
+
+/* ====== ====== [ TEXT ] ====== ====== */
+h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+/* ====== ====== [ LINK ] ====== ====== */
+a {
+  color: #0d6efd;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: #0a58ca;
+}
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ====== ====== [ QUOTE ] ====== ====== */
+.quote {
+  font-size: 20px;
+}
+.author {
+  font-size: 20px;
+}
+
+/* ====== ====== [ IMAGE ] ====== ====== */
+figure {
+  margin: 0 0 1rem;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* ====== ====== [ VIDEO ] ====== ====== */
+video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+/* ====== ====== [ TABLE ] ====== ====== */
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #6c757d;
+  text-align: left;
+}
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+label {
+  display: inline-block;
+}
+
+/* ====== ====== [ CODE ] ====== ====== */
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--numors-font-monospace);
+  font-size: 1em;
+  direction: ltr /* rtl:ignore */;
+  unicode-bidi: bidi-override;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: 0.875em;
+}
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+code {
+  font-size: 0.875em;
+  color: #d63384;
+  word-wrap: break-word;
+}
+a > code {
+  color: inherit;
+}
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.875em;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
+}
+kbd kbd {
+  padding: 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/* ====== ====== [ FORM ] ====== ====== */
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+textarea {
+  resize: vertical;
+}
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+@media (min-width: 1200px) {
+  legend {
+    font-size: 1.5rem;
+  }
+}
+legend + * {
+  clear: left;
+}
+
+/* ====== ====== [ BUTTON ] ====== ====== */
+button {
+  border-radius: 0;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+select {
+  text-transform: none;
+}
+[role="button"] {
+  cursor: pointer;
+}
+select {
+  word-wrap: normal;
+}
+select:disabled {
+  opacity: 1;
+}
+[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+/* ====== ====== [ HOME ] ====== ====== */
+/* ====== ====== [ APPS ] ====== ====== */
+/* ====== ====== [ PAGE HEADER ] ====== ====== */
+/* ====== ====== [ CATEGORIES ] ====== ====== */
+/* ====== ====== [ CARD ] ====== ====== */
+/* ====== ====== [ POST HEADER ] ====== ====== */
+/* ====== ====== [ TAB ] ====== ====== */
+/* ====== ====== [ LOADING ] ====== ====== */
+/* ====== ====== [ ACCORDION ] ====== ====== */
+/* ====== ====== [ CAROUSEL ] ====== ====== */
+/* ====== ====== [ MODAL ] ====== ====== */
+/* ====== ====== [ AD ] ====== ====== */
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 576px) and (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 576px) and (orientation: landscape) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 992px) and (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 1200px) and (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 1400px) and (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 1400px) and (orientation: landscape) {
+  body {
+    background-color: green;
+  }
 }
 
 /* ====== ====== [ SMARTPHONE STYLING ] ====== ====== */
