@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace</title>
+    <meta name="description" content="An amazing information platform." />
+    <link rel="stylesheet" href="/inc/numors.css" />
+  </head>
+  <body>
+    <script>
+      if (localStorage.getItem("country") === "au") {
+        window.location.href = "/au";
+      } else if (localStorage.getItem("country") === "ca") {
+        window.location.href = "/ca";
+      } else if (localStorage.getItem("country") === "gb") {
+        window.location.href = "/gb";
+      } else if (localStorage.getItem("country") === "in") {
+        window.location.href = "/in";
+      } else if (localStorage.getItem("country") === "us") {
+        window.location.href = "/us";
+      }
+    </script>
+    <header>
+      <h1>Select Your Country</h1>
+    </header>
+    <main>
+      <ul>
+        <li><a href="/go/australia.html">Australia</a></li>
+        <li><a href="/go/canada.html">Canada</a></li>
+        <li><a href="/go/india.html">India</a></li>
+        <li><a href="/go/united-kingdom.html">United Kingdom</a></li>
+        <li><a href="/go/united-states.html">United States</a></li>
+      </ul>
+    </main>
+    <footer></footer>
+    <nav>
+      <ul class="nav-bar">
+        <li class="nav-item">
+          <a href="/in">
+            <img src="/img/home.svg" alt="Home Icon" class="nav-icon" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/explore">
+            <img src="/img/explore.svg" alt="Explore Icon" class="nav-icon" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/learning">
+            <img src="/img/learning.svg" alt="Learning Icon" class="nav-icon" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/marketplace">
+            <img
+              src="/img/marketplace.svg"
+              alt="Marketplace Icon"
+              class="nav-icon-active"
+            />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/account">
+            <img src="/img/account.svg" alt="Account Icon" class="nav-icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script src="/inc/numors.js"></script>
+  </body>
+</html>
