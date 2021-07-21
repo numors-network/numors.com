@@ -1,16 +1,3 @@
-/* ====== ====== [ COUNTRY REDIRECT ] ====== ====== */
-if (localStorage.getItem("country") === "au") {
-  window.location.href = "/au";
-} else if (localStorage.getItem("country") === "ca") {
-  window.location.href = "/ca";
-} else if (localStorage.getItem("country") === "gb") {
-  window.location.href = "/gb";
-} else if (localStorage.getItem("country") === "in") {
-  window.location.href = "/in";
-} else if (localStorage.getItem("country") === "us") {
-  window.location.href = "/us";
-}
-
 /* ====== ====== [ GOOGLE ANALYTICS ] ====== ====== */
 var imported = document.createElement("script");
 imported.src = "https://www.googletagmanager.com/gtag/js?id=G-E8N3JS78CM";
