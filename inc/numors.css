@@ -381,10 +381,23 @@ button:not(:disabled),
 /* ====== ====== [ FOOTER ] ====== ====== */
 .footer-links-a,
 .footer-links-b {
-  list-style: none;
+  text-align: center;
+  margin: 10px 0;
+  padding: 0;
 }
+
 .footer-link {
-  padding: 10px;
+  list-style: none;
+  display: inline;
+  padding: 5px;
+}
+.copyright-info {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* No media query for small portrait phone since this is the default */
