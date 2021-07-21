@@ -3,23 +3,19 @@
   <sitemap>
     <loc>https://www.numors.com/sitemap/app.xml</loc>
   </sitemap>
-    <sitemap>
+  <sitemap>
     <loc>https://www.numors.com/sitemap/article.xml</loc>
   </sitemap>
-    <sitemap>
+  <sitemap>
     <loc>https://www.numors.com/sitemap/tutorial.xml</loc>
   </sitemap>
-    <sitemap>
+  <sitemap>
     <loc>https://www.numors.com/sitemap/product.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://www.numors.com/sitemap/au-explore.xml</loc>
+    <loc>https://www.numors.com/sitemap/account.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://www.numors.com/sitemap/au-learning.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.numors.com/sitemap/au-marketplace.xml</loc>
-  </sitemap>
-  
+    <loc>https://www.numors.com/sitemap/india.xml</loc>
+  </sitemap> 
 </sitemapindex>
