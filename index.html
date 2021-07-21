@@ -10,18 +10,44 @@
   </head>
   <body>
     <script>
-      if (localStorage.getItem("country") === "uk") {
-        window.location.href = "/uk";
+      if (localStorage.getItem("country") === "au") {
+        window.location.href = "/au";
+      } else if (localStorage.getItem("country") === "ca") {
+        window.location.href = "/ca";
+      } else if (localStorage.getItem("country") === "gb") {
+        window.location.href = "/gb";
+      } else if (localStorage.getItem("country") === "in") {
+        window.location.href = "/in";
+      } else if (localStorage.getItem("country") === "us") {
+        window.location.href = "/us";
       }
     </script>
-    <h1>Select Your Country</h1>
-    <ul>
-      <li><a href="/go/set-australia.html">Australia</a></li>
-      <li><a href="/go/set-canada.html">Canada</a></li>
-      <li><a href="/go/set-india.html">India</a></li>
-      <li><a href="/go/set-united-kingdom.html">United Kingdom</a></li>
-      <li><a href="/go/set-united-states.html">United States</a></li>
-    </ul>
+    <header>
+      <h1>Select Your Country</h1>
+    </header>
+    <main>
+      <ul>
+        <li><a href="/go/set-australia.html">Australia</a></li>
+        <li><a href="/go/set-canada.html">Canada</a></li>
+        <li><a href="/go/set-india.html">India</a></li>
+        <li><a href="/go/set-united-kingdom.html">United Kingdom</a></li>
+        <li><a href="/go/set-united-states.html">United States</a></li>
+      </ul>
+    </main>
+    <footer>
+      <ul class="footer-links-a">
+        <a href="/in/about" class="footer-link">About</a>
+        <a href="/in/ads" class="footer-link">Advertising</a>
+        <a href="/in/contributors" class="footer-link">Careers</a>
+        <a href="/in/contact" class="footer-link">Contact</a>
+        <a href="/in/help" class="footer-link">Help</a>
+      </ul>
+      <ul class="footer-links-b">
+        <a href="/in/privacy-policy" class="footer-link">Privacy Policy</a>
+        <a href="/in/terms-of-service" class="footer-link">Terms of Service</a>
+      </ul>
+    </footer>
+    <div class="copyright-info">© 2021 Numors Technologies Pvt. Ltd.</div>
     <script src="/inc/numors.js"></script>
   </body>
 </html>
