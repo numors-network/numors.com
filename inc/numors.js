@@ -11,6 +11,10 @@ gtag("js", new Date());
 
 gtag("config", "G-E8N3JS78CM");
 
+/* ====== ====== [ TIME & DATE ] ====== ====== */
+var dt = new Date().getFullYear();
+document.getElementById("current-year").innerHTML = dt;
+
 /* ====== ====== [ FILTER & SORT ] ====== ====== */
 var List;
 List = /******/ (function () {
