@@ -378,6 +378,14 @@ button:not(:disabled),
 /* ====== ====== [ CAROUSEL ] ====== ====== */
 /* ====== ====== [ MODAL ] ====== ====== */
 /* ====== ====== [ AD ] ====== ====== */
+/* ====== ====== [ FOOTER ] ====== ====== */
+.footer-links-a,
+.footer-links-b {
+  list-style: none;
+}
+.footer-link {
+  padding: 10px;
+}
 
 /* No media query for small portrait phone since this is the default */
 
