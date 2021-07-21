@@ -64,71 +64,59 @@ body {
 header,
 main,
 footer {
+  margin: 0;
+  padding: 0;
   animation: fadeIn 1s;
 }
 
-/* ====== ====== [ NAV BAR ] ====== ====== */
-.nav {
-  position: fixed;
-  background-color: aquamarine;
+footer {
+  padding: 50px;
 }
+
+/* ====== ====== [ NAV BAR ] ====== ====== */
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 3rem;
+  background-color: #b6b6b6;
+}
+
 .nav-bar {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   height: 100%;
+  justify-content: center;
 }
+
 .nav-item {
-  width: 100%;
+  width: 50%;
 }
-.nav-link {
+
+.nav-item {
   display: flex;
   align-items: center;
-  height: 5rem;
-  text-decoration: none;
-}
-.link-text {
-  display: none;
-  margin-left: 1rem;
-}
-.nav-link svg {
-  width: 2rem;
-  min-width: 2rem;
-  margin: 0 1.5rem;
-}
-.nav {
-  bottom: 0;
-  width: 100vw;
   height: 3rem;
-}
-.nav-bar {
-  flex-direction: row;
-}
-.nav-item {
-  height: 100%;
-}
-.nav-link {
+  transition: 600ms;
   justify-content: center;
 }
-.nav {
-  bottom: 0;
-  width: 100vw;
-  height: 3rem;
+
+.nav-icon,
+.nav-icon-active {
+  height: 20px;
+  width: auto;
 }
-.nav-bar {
-  flex-direction: row;
+
+.nav-icon {
+  filter: grayscale(100%) opacity(0.7);
 }
-.nav-item {
-  height: 100%;
-}
-.nav-link {
-  justify-content: center;
-}
-main {
-  margin: 0;
+
+.nav-icon:hover,
+.nav-icon-active {
+  filter: grayscale(0%) opacity(1);
 }
 
 /* ====== ====== [ SCROLL BAR ] ====== ====== */
@@ -391,241 +379,128 @@ button:not(:disabled),
 /* ====== ====== [ MODAL ] ====== ====== */
 /* ====== ====== [ AD ] ====== ====== */
 
-@media only screen and (orientation: landscape) {
-  body {
-    background-color: green;
-  }
-}
+/* No media query for small portrait phone since this is the default */
 
-@media (min-width: 576px) and (orientation: portrait) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 576px) and (orientation: landscape) {
-  body {
-    background-color: green;
-  }
-}
-
-@media (min-width: 768px) and (orientation: portrait) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 768px) and (orientation: landscape) {
-  body {
-    background-color: green;
-  }
-}
-
-@media (min-width: 992px) and (orientation: portrait) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 992px) and (orientation: landscape) {
-  body {
-    background-color: green;
-  }
-}
-
-@media (min-width: 1200px) and (orientation: portrait) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 1200px) and (orientation: landscape) {
-  body {
-    background-color: green;
-  }
-}
-
-@media (min-width: 1400px) and (orientation: portrait) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 1400px) and (orientation: landscape) {
-  body {
-    background-color: green;
-  }
-}
-
-/* ====== ====== [ SMARTPHONE STYLING ] ====== ====== */
-@media only screen and (max-width: 600px) {
-  /* ====== [ Root ] ====== */
-  body {
-    color: black;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-  }
-  header,
-  main,
-  footer {
-    animation: fadeIn 1s;
-  }
-
-  /* ====== [ Text ] ====== */
+/* Small Devices, Landscape Phone */
+@media (orientation: landscape) {
   h1 {
-    font-size: 34px;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  h3 {
-    font-size: 26px;
-    font-weight: bold;
-  }
-  p {
     font-size: 20px;
-  }
-  li {
-    font-size: 20px;
-  }
-
-  /* ====== [ Link ] ====== */
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    color: #1e90ff;
-    text-decoration: none;
-  }
-
-  /* ====== [ Image ] ====== */
-
-  /* ====== [ Header ] ====== */
-
-  /* ====== [ Main ] ====== */
-
-  /* ====== [ Footer ] ====== */
-  div.footer-links-a {
-    padding: 10px 0 4px 0;
-    text-align: center;
-  }
-  div.footer-links-b {
-    text-align: center;
-  }
-  a.footer-link {
-    color: #444444;
-    padding: 0 4px;
-  }
-  div.copyright-info {
-    padding: 10px;
-    text-align: center;
-    color: #444444;
-  }
-  .nav {
-    bottom: 0;
-    width: 100vw;
-    height: 3rem;
-  }
-  .nav-bar {
-    flex-direction: row;
-  }
-  .nav-item {
-    height: 100%;
-  }
-  .nav-link {
-    justify-content: center;
-  }
-  main {
-    margin: 0;
   }
 }
 
-/* ====== ====== [ DESKTOP STYLING ] ====== ====== */
-@media only screen and (min-width: 600px) {
-  /* ====== [ Root ] ====== */
-  body {
-    color: black;
-    background-color: white;
-    margin: 0;
-    padding: 0;
+/* Small Devices, Landscape Phone */
+@media (min-width: 576px) and (orientation: portrait) {
+  h1 {
+    font-size: 20px;
   }
+}
+
+/* Small Devices, Landscape Phone */
+@media (min-width: 576px) and (orientation: landscape) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices, Tablets */
+@media (min-width: 768px) and (orientation: portrait) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices, Tablets */
+@media (min-width: 768px) and (orientation: landscape) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Large devices, Desktops */
+@media (min-width: 992px) and (orientation: portrait) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Large devices, Desktops */
+@media (min-width: 992px) and (orientation: landscape) {
   header,
   main,
   footer {
-    animation: fadeIn 1s;
     margin-left: 5rem;
     padding: 1rem;
   }
 
-  /* ====== [ Text ] ====== */
-  h1 {
-    font-size: 34px;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  h3 {
-    font-size: 26px;
-    font-weight: bold;
-  }
-  p {
-    font-size: 20px;
-  }
-  li {
-    font-size: 20px;
-  }
-
-  /* ====== [ Link ] ====== */
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    color: #1e90ff;
-    text-decoration: none;
-  }
-  /* ====== [ Image ] ====== */
-  /* ====== [ Header ] ====== */
-  /* ====== [ Main ] ====== */
-  /* ====== [ Footer ] ====== */
-  div.footer-links-a {
-    padding: 10px 0 4px 0;
-    text-align: center;
-  }
-  div.footer-links-b {
-    text-align: center;
-  }
-  a.footer-link {
-    color: #444444;
-    padding: 0 4px;
-  }
-  div.copyright-info {
-    padding: 10px;
-    text-align: center;
-    color: #444444;
-  }
-
-  /* ====== [ Nav Bar ] ====== */
-  .nav {
+  nav {
+    position: fixed;
     top: 0;
-    width: 3rem;
+    width: 4rem;
     height: 100vh;
+    background-color: #b6b6b6;
+  }
+
+  .nav-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    transition: 600ms;
+  }
+
+  .nav-icon,
+  .nav-icon-active {
+    height: 20px;
+    width: auto;
+  }
+
+  .nav-icon {
+    filter: grayscale(100%) opacity(0.7);
+  }
+
+  .nav-icon:hover,
+  .nav-icon-active {
+    filter: grayscale(0%) opacity(1);
   }
 }
 
-/* ====== ====== [ SCROLLBAR STYLING ] ====== ====== */
-::-webkit-scrollbar {
-  width: 16px;
+/* Large Desktops */
+@media (min-width: 1200px) and (orientation: portrait) {
+  h1 {
+    font-size: 20px;
+  }
 }
-::-webkit-scrollbar-track {
-  background: #ffffff;
+
+/* Large Desktops */
+@media (min-width: 1200px) and (orientation: landscape) {
+  h1 {
+    font-size: 20px;
+  }
 }
-::-webkit-scrollbar-thumb {
-  background: #bbbbbb;
-  border: 4px solid #ffffff;
-  border-radius: 25px;
+
+/* Extra Large Desktops */
+@media (min-width: 1400px) and (orientation: portrait) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Extra Large Desktops */
+@media (min-width: 1400px) and (orientation: landscape) {
+  h1 {
+    font-size: 20px;
+  }
 }
