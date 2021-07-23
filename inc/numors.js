@@ -1,3 +1,15 @@
+/* ====== ====== [ SERVICE WORKER ] ====== ====== */
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+
+document.querySelector("#show").addEventListener("click", () => {
+  const iconUrl = document.querySelector("select").selectedOptions[0].value;
+  let imgElement = document.createElement("img");
+  imgElement.src = iconUrl;
+  document.querySelector("#container").appendChild(imgElement);
+});
+
 /* ====== ====== [ GOOGLE ANALYTICS ] ====== ====== */
 var imported = document.createElement("script");
 imported.src = "https://www.googletagmanager.com/gtag/js?id=G-E8N3JS78CM";
