@@ -1098,9 +1098,9 @@ List = (function () {
 })();
 
 var options = {
-  valueNames: ["name", "born"],
+  valueNames: ["country"],
 };
-var userList = new List("users", options);
+var userList = new List("countries", options);
 
 // Google Analytics
 var imported = document.createElement("script");
