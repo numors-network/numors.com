@@ -26,16 +26,37 @@
       }
     </script>
     <header>
-      <h1>Select Your Country</h1>
+      <img src="/img/globe.png" alt="Globe" class="page-header-image" />
+      <h1>Select Your Country or Region</h1>
     </header>
     <main>
-      <ul>
-        <li><a href="#">Australia</a></li>
-        <li><a href="#">Canada</a></li>
-        <li><a href="/go/india">India</a></li>
-        <li><a href="#">United Kingdom</a></li>
-        <li><a href="#">United States</a></li>
-      </ul>
+      <div class="countries" id="countries">
+        <input class="search" placeholder="Search Your Country or Region" />
+        <ul class="list">
+          <li>
+            <a href="#">
+              <img
+                src="/img/australia-flag.svg"
+                alt="Australia Flag"
+                class="flag"
+              />
+              <h3 class="country">Australia</h3>
+            </a>
+          </li>
+          <li>
+            <h3 class="country">Canada</h3>
+          </li>
+          <li>
+            <h3 class="country">India</h3>
+          </li>
+          <li>
+            <h3 class="country">United Kingdom</h3>
+          </li>
+          <li>
+            <h3 class="country">United States</h3>
+          </li>
+        </ul>
+      </div>
     </main>
     <footer></footer>
     <nav>
