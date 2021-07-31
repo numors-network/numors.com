@@ -9,65 +9,57 @@
     <link rel="stylesheet" href="/inc/numors.css" />
   </head>
   <body>
-    <script>
-      if (localStorage.getItem("country") === "au") {
-        window.location.href = "/au";
-      } else if (localStorage.getItem("country") === "ca") {
-        window.location.href = "/ca";
-      } else if (localStorage.getItem("country") === "gb") {
-        window.location.href = "/gb";
-      } else if (localStorage.getItem("country") === "in") {
-        window.location.href = "/in";
-      } else if (localStorage.getItem("country") === "us") {
-        window.location.href = "/us";
-      }
-    </script>
     <header>
-      <h1>Select Your Country</h1>
+      <h1>Explore</h1>
     </header>
-    <main>
-      <ul>
-        <li><a href="#">Australia</a></li>
-        <li><a href="#">Canada</a></li>
-        <li><a href="/go/india">India</a></li>
-        <li><a href="#">United Kingdom</a></li>
-        <li><a href="#">United States</a></li>
+    <main></main>
+    <footer>
+      <ul class="footer-links">
+        <li class="footer-link"><a href="/about">About</a></li>
+        <li class="footer-link"><a href="/ads">Advertising</a></li>
+        <li class="footer-link"><a href="/careers">Careers</a></li>
+        <li class="footer-link"><a href="/contact">Contact</a></li>
+        <li class="footer-link"><a href="/help">Help</a></li>
+        <li class="footer-link">
+          <a href="/privacy-policy">Privacy Policy</a>
+        </li>
+        <li class="footer-link">
+          <a href="/terms-of-service">Terms of Service</a>
+        </li>
       </ul>
-    </main>
-    <footer></footer>
+      <p class="copyright-info">
+        © <span id="current-year">YYYY</span> Numors Technologies Pvt. Ltd.
+      </p>
+    </footer>
     <nav>
       <ul class="nav-bar">
         <li class="nav-item">
           <a href="/">
-            <img src="/img/home.svg" alt="Home Icon" class="nav-icon" />
+            <img src="/img/home.svg" alt="Home" class="nav-icon" />
           </a>
         </li>
         <li class="nav-item">
           <a href="/explore">
-            <img
-              src="/img/explore.svg"
-              alt="Explore Icon"
-              class="nav-icon-active"
-            />
+            <img src="/img/explore.svg" alt="Explore" class="nav-icon-active" />
           </a>
         </li>
         <li class="nav-item">
           <a href="/learning">
-            <img src="/img/learning.svg" alt="Learning Icon" class="nav-icon" />
+            <img src="/img/learning.svg" alt="Learning" class="nav-icon" />
           </a>
         </li>
         <li class="nav-item">
           <a href="/marketplace">
             <img
               src="/img/marketplace.svg"
-              alt="Marketplace Icon"
+              alt="Marketplace"
               class="nav-icon"
             />
           </a>
         </li>
         <li class="nav-item">
           <a href="/account">
-            <img src="/img/account.svg" alt="Account Icon" class="nav-icon" />
+            <img src="/img/account.svg" alt="Account" class="nav-icon" />
           </a>
         </li>
       </ul>
