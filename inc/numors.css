@@ -1,18 +1,12 @@
 /* ====== [ CORE ] ====== */
-
-/* Reboot */
+/* Import */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 /* Font */
-@charset "UTF-8";
 :root {
-  --numors-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  --numors-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --numors-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
 }
 
 /* Color */
@@ -59,11 +53,11 @@
 }
 
 /* ====== [ LAYOUT ] ====== */
-
-/* Body */
-body {
+* {
   margin: 0;
   padding: 0;
+}
+body {
   font-family: var(--numors-sans-serif);
   font-size: 20px;
   font-weight: 400;
@@ -93,6 +87,13 @@ footer {
 /* Navbar */
 
 /* ====== [ HEADER ] ====== */
+/* Banner */
+.numors-banner {
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+  border-radius: 6px;
+}
 
 /* Page Header */
 .page-image {
@@ -114,7 +115,8 @@ footer {
 
 /* Post Header */
 .post-image {
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
 }
 .post-title {
   color: var(--numors-black);
@@ -137,6 +139,17 @@ footer {
 /* ====== [ MAIN ] ====== */
 
 /* Apps & Trends */
+.app {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.app-icon {
+  width: 100%;
+  border-radius: 20px;
+}
 
 /* Country Selector */
 
