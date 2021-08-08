@@ -413,17 +413,18 @@ legend + * {
 /* ====== [ FOOTER ] ====== */
 
 /* Footer Link */
+footer {
+  text-align: center;
+}
 .footer-link {
   list-style: none;
-  display: inline;
+  display: inline-block;
   padding: 5px;
+  font-size: 15px;
 }
 
-/* Help Center */
-
-/* Copyright Info */
-.copyright-info {
-  text-align: center;
+/* Copyright */
+.copyright {
   padding-bottom: 25px;
   font-size: 15px;
 }
