@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
   --white: #ffffff;
@@ -35,7 +35,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
 
@@ -53,27 +53,30 @@ body {
 header,
 main,
 footer {
-  margin: 2%;
-  padding: 0;
+  /* margin: 2%;
+  padding: 0; */
   animation: fadeIn 1s;
 }
 
 .banner {
-  width: 100%;
+  display: block;
+  width: 50%;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .apps {
-  width: 100%;
+  width: 75%;
+  display: block;
+  margin: auto;
 }
 
 .app {
-  width: 32%;
+  width: 20%;
   float: left;
-  padding: 2%;
-  font-size: 10px;
+  padding: 4%;
   text-align: center;
+  /* background: lightcoral; */
 }
 
 .app-icon {
@@ -107,46 +110,55 @@ footer {
 }
 
 .categories {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 19.2% 19.2% 19.2% 19.2% 19.2%;
-  grid-column-gap: 1%;
-  grid-row-gap: 4%;
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 
 .category {
+  width: 33.33%;
+  float: left;
+  padding: 2%;
   text-align: center;
+  /* background: lightcoral; */
 }
 
 .category-image {
-  text-align: center;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .category-name {
-  height: 150px;
-  border-radius: 50%;
+  font-size: 20px;
 }
 
 /* Filter & Sort */
 
 .cards {
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 
 .card {
-  width: 100%;
+  width: 33.33%;
+  float: left;
+  padding: 2%;
+  text-align: center;
+  /* background: lightcoral; */
 }
 
 .card-image {
   width: 100%;
+  border-radius: 10px;
 }
 
 .card-title {
-  width: 100%;
+  font-size: 20px;
 }
 
 .card-subtitle {
-  width: 100%;
+  font-size: 25px;
 }
 
 .post-image {
@@ -291,8 +303,7 @@ legend {
 
 footer {
   text-align: center;
-  padding-bottom: 40px;
-  display: block;
+  padding-bottom: 2px;
 }
 
 .footer-link {
@@ -300,10 +311,11 @@ footer {
   display: inline-block;
   padding: 5px;
   font-size: 15px;
+  color: var(--black);
 }
 
-.copyright {
-  padding-bottom: 25px;
+.copyright,
+#current-year {
   font-size: 15px;
 }
 
@@ -398,8 +410,9 @@ nav {
   header,
   main,
   footer {
-    margin-left: 64px;
+    margin: 2px 2px 2px 62px;
     padding: 2%;
+    /* background-color: khaki; */
   }
 
   nav {
