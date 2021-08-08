@@ -312,7 +312,9 @@ nav {
   bottom: 0;
   width: 100vw;
   height: 48px;
-  background-color: var(--yellow);
+  /* background-color: var(--yellow); */
+  border: 0;
+  border-right: 1px solid var(--light-gray);
 }
 
 .nav-bar {
@@ -405,7 +407,9 @@ nav {
     top: 0;
     width: 60px;
     height: 100vh;
-    background-color: var(--yellow);
+    /* background-color: var(--yellow); */
+    border: 0;
+    border-right: 1px solid var(--light-gray);
   }
 
   .nav-bar {
