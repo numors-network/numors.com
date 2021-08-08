@@ -1,8 +1,6 @@
-// Current Year
 var currentYear = new Date().getFullYear();
 document.getElementById("current-year").innerHTML = currentYear;
 
-// Filter & Sort
 var List;
 List = (function () {
   var t = {
@@ -1102,4 +1100,7 @@ var options = {
 };
 var userList = new List("countries", options);
 
-// Google Analytics
+var options = {
+  valueNames: ["name", "born"],
+};
+var userList = new List("users", options);
