@@ -92,7 +92,7 @@ footer {
 
 .page-image {
   display: block;
-  height: 250px;
+  width: 200px;
   margin: auto;
   border-radius: 50%;
 }
@@ -116,7 +116,7 @@ footer {
 }
 
 .category {
-  width: 33.33%;
+  width: 25%;
   float: left;
   padding: 2%;
   text-align: center;
@@ -132,7 +132,20 @@ footer {
   font-size: 20px;
 }
 
-/* Filter & Sort */
+.search {
+  background-color: var(--light-gray);
+  border: 1px solid red;
+  border-radius: 10px;
+  color: var(--black);
+  padding: 8px;
+  font-size: 15px;
+  width: 86.5%;
+  display: block;
+  margin: auto;
+}
+.search:focus {
+  border: 1px solid red;
+}
 
 .cards {
   width: 90%;
