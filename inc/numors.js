@@ -1107,7 +1107,7 @@ List = (function () {
   })("./src/index.js");
 })();
 
-var options = {
+var optionsss = {
   valueNames: ["card-title"],
 };
-var userList = new List("articles", options);
+var userList = new List("articles", optionsss);
