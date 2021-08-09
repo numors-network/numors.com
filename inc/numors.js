@@ -1,3 +1,15 @@
+var imported = document.createElement("script");
+imported.src = "https://www.googletagmanager.com/gtag/js?id=G-QDYS588F19";
+document.head.appendChild(imported);
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "G-QDYS588F19");
+
 var currentYear = new Date().getFullYear();
 document.getElementById("current-year").innerHTML = currentYear;
 
@@ -1096,11 +1108,6 @@ List = (function () {
 })();
 
 var options = {
-  valueNames: ["country"],
+  valueNames: ["card-title"],
 };
-var userList = new List("countries", options);
-
-var options = {
-  valueNames: ["name", "born"],
-};
-var userList = new List("users", options);
+var userList = new List("articles", options);
