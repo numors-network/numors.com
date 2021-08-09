@@ -152,7 +152,7 @@ footer {
 .card {
   width: 33.33%;
   float: left;
-  padding: 2%;
+
   text-align: center;
 }
 
@@ -454,33 +454,34 @@ nav {
 
   .category-name {
     font-size: 18px;
+    color: var(--black);
   }
 
   .search {
     background-color: var(--light-gray);
-    border: 1px solid red;
+    border: 1px solid var(--light-gray);
     border-radius: 10px;
     color: var(--black);
     padding: 8px;
     font-size: 15px;
-    width: 86.5%;
+    width: 100%;
     display: block;
     margin: auto;
   }
   .search:focus {
-    border: 1px solid red;
+    border: 1px solid var(--light-gray);
   }
 
   .cards {
-    width: 90%;
+    width: 100%;
     display: block;
     margin: auto;
   }
 
   .card {
-    width: 33.33%;
+    width: 100%;
     float: left;
-    padding: 2%;
+    padding: 2% 0;
     text-align: center;
   }
 
