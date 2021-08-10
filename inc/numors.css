@@ -642,14 +642,16 @@ nav {
     list-style: none;
     display: inline-block;
     padding: 0 5px 0 5px;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 0.1;
+    color: var(--dark-gray);
   }
 
   .copyright,
   #current-year {
-    font-size: 15px;
-    padding: 5px 0px;
+    font-size: 12px;
+    padding: 12px 0 5px 0px;
+    color: var(--dark-gray);
   }
 
   nav {
