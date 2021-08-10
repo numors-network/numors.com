@@ -649,7 +649,7 @@ nav {
 
   .copyright,
   #current-year {
-    font-size: 12px;
+    font-size: 14px;
     padding: 12px 0 5px 0px;
     color: var(--dark-gray);
   }
