@@ -643,7 +643,6 @@ nav {
     display: inline-block;
     padding: 0 5px 0 5px;
     font-size: 14px;
-    line-height: 0.1;
     color: var(--dark-gray);
   }
 
