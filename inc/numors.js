@@ -1,5 +1,5 @@
 var imported = document.createElement("script");
-imported.src = "https://www.googletagmanager.com/gtag/js?id=G-QDYS588F19";
+imported.src = "https://www.googletagmanager.com/gtag/js?id=G-90QENW2Z40";
 document.head.appendChild(imported);
 
 window.dataLayer = window.dataLayer || [];
@@ -8,7 +8,7 @@ function gtag() {
 }
 gtag("js", new Date());
 
-gtag("config", "G-QDYS588F19");
+gtag("config", "G-90QENW2Z40");
 
 var currentYear = new Date().getFullYear();
 document.getElementById("current-year").innerHTML = currentYear;
