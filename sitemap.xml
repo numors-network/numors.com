@@ -15,4 +15,7 @@
   <sitemap>
     <loc>https://www.numors.com/sitemap/marketplace.xml</loc>
   </sitemap>
+  <sitemap>
+    <loc>https://www.numors.com/sitemap/profile.xml</loc>
+  </sitemap>
 </sitemapindex>
